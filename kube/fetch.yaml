@@ -23,7 +23,7 @@ spec:
             - name: PASSWORD
               value: password
             - name: MANIPULATE_ENDPOINT
-              value: nginx:80 # send to nginx for autoscaling
+              value: manipulation-service:80
           imagePullPolicy: Always
 ---
 apiVersion: v1
