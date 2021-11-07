@@ -16,8 +16,13 @@ spec:
         - name: manipulation-service
           image: bitprj/mini-manipulation-service
           ports:
-            - containerPort: 80
+          - containerPort: 80
           imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 200m
 ---
 apiVersion: v1
 kind: Service
